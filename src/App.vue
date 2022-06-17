@@ -8,9 +8,9 @@
 			<img class="logo" src="./assets/spacex-logo.png" alt="SpaceX" />
 		</a>
     <div class="links" id="nav">
-      <router-link class="link" to="/">Home</router-link>
-      <router-link class="link" to="/about/1">About</router-link>
-      <router-link class="link" to="/launches">Launches</router-link>
+      <router-link class="links__link" to="/">Home</router-link>
+      <router-link class="links__link" to="/about/1">About</router-link>
+      <router-link class="links__link" to="/launches">Launches</router-link>
     </div>
   </nav> 
 </header>
@@ -19,7 +19,7 @@
 </main>
 <footer class="footer">
 			<ul class="footer__list">
-        <li><div class="footer__text sel">SPACEX © 2021</div></li>
+        <li><div class="footer__list__text">SPACEX © 2021</div></li>
 			</ul>
 </footer>
 </template>
@@ -90,14 +90,14 @@ a{
 .links{
   padding-right: 3vw;
 }
-.link{
+.links__link{
   margin: 2vw;
 	position: relative;
 }
 #nav a.router-link-exact-active {
   color: gray;
 }
-.links .link:after {
+.links .links__link:after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -110,7 +110,7 @@ a{
 	transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.links .link:hover:after {
+.links .links__link:hover:after {
 	transform: scaleX(1);
 	transform-origin: left center;
 }
@@ -128,7 +128,7 @@ a{
 ul{
 	list-style: none;
 }
-.footer__text {
+.footer__list__text {
 	color: #979797;
 }
 .footer__list {

@@ -1,11 +1,11 @@
 <template>
     <div class="everyRocket">
-        <div class="characteristics">
+        <div class="characteristicsH1">
            <h1>Main characteristics</h1>
         </div>
-        <div class="carousel">
-            <div class="carousel__slides">
-                <div class="slide">
+        <div class="slides">
+            <div class="slides__everySlide">
+                <div class="slides__everySlide__slide">
                     <div class="left">
                         <h6>Falcon9</h6>
                         <h2>OVERVIEW</h2>
@@ -62,7 +62,7 @@
                         <img class="rocket" src="./img/Falcon9.png" alt="">
                     </div>
                 </div>
-                <div class="slide">
+                <div class="slides__everySlide__slide">
                     <div class="left">
                         <h6>FALCON HEAVY</h6>
                         <h2>OVERVIEW</h2>
@@ -119,7 +119,7 @@
                         <img class="rocket" src="./img/FalconHeavy.png" alt="">
                     </div>
                 </div>
-                <div class="slide black">
+                <div class="slides__everySlide__slide black">
                     <div class="left">
                         <h6>DRAGON</h6>
                         <h2>OVERVIEW</h2>
@@ -176,7 +176,7 @@
                         <img class="rocket" src="./img/dragon.jpg" alt="">
                     </div>
                 </div>
-                <div class="slide black">
+                <div class="slides__everySlide__slide black">
                     <div class="left">
                         <h6>Starship</h6>
                         <h2>OVERVIEW</h2>
@@ -225,7 +225,7 @@ export default {
 .everyRocket{
     background-color: rgb(24, 28, 31);
 }
-.characteristics{
+.characteristicsH1{
     display: flex;
     justify-content: center;
     padding-top: 20px ;
@@ -235,17 +235,17 @@ export default {
 .black{
     background: #000;
 }
-.carousel{
+.slides{
     width: 100%;
     display: flex;
     flex-direction: row;
     overflow: hidden;
 }
-.carousel__slides{
+.slides__everySlide{
     width: 100%;
     height: 100%;
 }
-.slide{
+.slides__everySlide__slide{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;

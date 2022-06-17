@@ -43,9 +43,9 @@
       <img class="mission" :src="this.missions[parseInt(this.$route.params.mission)]" alt="">
       <p class="dream">SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more </p>
       <p class="dream">exciting than one where we are not.</p>
-      <p class="dream p-40 b-40">-Elon Musk</p>
+      <p class="dream p-40 b-10">-Elon Musk</p>
       <div class="vl"></div>
-      <div class="rewatch b-40">
+      <div class="rewatch b-10">
             <a class="content__button" href="https://www.spacex.com/" target="blank">
 					    <span class="text">FIND YOUR FUTURE</span>
 					    <div class="hover"></div>
@@ -116,7 +116,7 @@ export default {
 .mission{
   max-width: 60vw;
 }
-.b-40{
+.b-10{
   padding-top: 10vh;
   padding-bottom: 10vh;
 }

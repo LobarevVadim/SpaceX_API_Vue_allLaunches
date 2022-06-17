@@ -10,7 +10,7 @@
 			    </a>
         </div>
       </div>
-      <div class="astronaut">
+      <div class="beginning__astronaut">
         <img class="astronautImg" src="./img/astronaut.png" alt="">
       </div>
     </div>
